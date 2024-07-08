@@ -43,18 +43,12 @@ This script cleans and formats volleyball statistics data. The script reads raw 
 
 1. **Clone the repository**:
 
-    ```bash
-    git clone https://github.com/your-username/your-repo-name.git
-    cd your-repo-name
+     ```bash
+    git clone https://github.com/your-username/your-repo-name.git](https://github.com/JustJakee/PythonScripts.git
+    cd PythonScripts
     ```
 
-2. **Navigate to the script directory** (if applicable):
-
-    ```bash
-    cd volleyball-stats-cleaner
-    ```
-
-3. **Run the script**:
+2. **Run the script**:
 
     ```bash
     python clean_volleyball_stats.py
@@ -83,6 +77,93 @@ Jersey|MatchGamesPlayed|TotalServes|ServingAces|ServingErrors|ServingPoints|Atta
 | 12     | 5                 | 24          | 2            | 0             | 15             | 0                | 0            | 0             | 0                       | 0                      | 0           | 0              | 0            | 3                    | 1       | 0              | 8    | 0          |
 | 13     | 5                 | 4           | 0            | 0             | 3              | 0                | 0            | 0             | 1                       | 0                      | 0           | 0              | 0            | 37                   | 10      | 1              | 5    | 0          |
 
+</details>
+
+<details>
+<summary>CSV to JSON Converter</summary>
+
+1. **Clone the repository**:
+
+    ```bash
+    git clone https://github.com/your-username/your-repo-name.git](https://github.com/JustJakee/PythonScripts.git
+    cd PythonScripts
+    ```
+
+2. **Verify Python is installed** (Download and install Python from [python.org](https://www.python.org/downloads/) if applicable.):
+
+3. **Create your CSV** (within your directory example: _MonopolyGoCards.csv_):
+   
+    ```csv
+    card_name, card_set, card_number
+    Starlit Ceremony,Opening Ceremony,1
+    Blue Barons,Opening Ceremony,2
+    Green Gladiators,Opening Ceremony,3
+    Gold Stars,Opening Ceremony,4
+    Orange Optimists,Opening Ceremony,5
+    Pink Pioneers,Opening Ceremony,6
+    Red Respect,Opening Ceremony,7
+    Final Countdown,Opening Ceremony,8
+    The Games Begin,Opening Ceremony,9
+    ```
+3. **Run the script**:
+
+    ```bash
+    python csv_to_json.py
+    ```
+
+4. **Verify the output** of your new file (example: _MonopolyGoCards.json_):
+   
+   ```json
+    {
+        "Opening Ceremony": [
+            {
+                "card_name": "Starlit Ceremony",
+                "card_set": "Opening Ceremony",
+                "card_number": 1
+            },
+            {
+                "card_name": "Blue Barons",
+                "card_set": "Opening Ceremony",
+                "card_number": 2
+            },
+            {
+                "card_name": "Green Gladiators",
+                "card_set": "Opening Ceremony",
+                "card_number": 3
+            },
+            {
+                "card_name": "Gold Stars",
+                "card_set": "Opening Ceremony",
+                "card_number": 4
+            },
+            {
+                "card_name": "Orange Optimists",
+                "card_set": "Opening Ceremony",
+                "card_number": 5
+            },
+            {
+                "card_name": "Pink Pioneers",
+                "card_set": "Opening Ceremony",
+                "card_number": 6
+            },
+            {
+                "card_name": "Red Respect",
+                "card_set": "Opening Ceremony",
+                "card_number": 7
+            },
+            {
+                "card_name": "Final Countdown",
+                "card_set": "Opening Ceremony",
+                "card_number": 8
+            },
+            {
+                "card_name": "The Games Begin",
+                "card_set": "Opening Ceremony",
+                "card_number": 9
+            }
+        ]
+    }
+    ```
 </details>
 
 <!-- Add more scripts here in a similar format
